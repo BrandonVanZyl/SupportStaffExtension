@@ -5,8 +5,6 @@ import path, { extname, relative } from "path";
 import { fileURLToPath } from "node:url";
 import { glob } from "glob";
 
-const external = [/node_modules/];
-
 const input = Object.fromEntries(
   glob
     .sync("src/**/*.{ts,css}", {
@@ -22,8 +20,6 @@ const input = Object.fromEntries(
     ])
 );
 input["main"] = "index.html";
-input["build"] = "build.css";
-
 export default defineConfig({
   plugins: [
     react(),

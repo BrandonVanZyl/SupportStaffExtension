@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Deveops File Collapse",
+  "name": "SupportStaffExtension",
   "description": "Extension to collapse files from azure devops pull request changes",
   "version": "1.0",
   "action": {
